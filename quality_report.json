@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-01-26T14:43:08.517590",
+  "checks_performed": [
+    "duplicate_check",
+    "required_columns_check",
+    "null_handling",
+    "type_validation",
+    "range_validation",
+    "pattern_validation",
+    "outlier_detection"
+  ],
+  "issues_found": [
+    {
+      "type": "duplicates",
+      "count": 1,
+      "columns_checked": [
+        "user_id"
+      ]
+    },
+    {
+      "type": "null_values",
+      "column": "age",
+      "count": 1,
+      "percentage": 11.11,
+      "strategy": "fill_median"
+    },
+    {
+      "type": "type_conversion_error",
+      "column": "age",
+      "expected_type": "int",
+      "error": "cannot safely cast non-equivalent float64 to int64"
+    },
+    {
+      "type": "range_violation",
+      "column": "age",
+      "violation": "below_minimum",
+      "count": 1,
+      "threshold": 0
+    },
+    {
+      "type": "range_violation",
+      "column": "age",
+      "violation": "above_maximum",
+      "count": 2,
+      "threshold": 120
+    },
+    {
+      "type": "outliers",
+      "column": "salary",
+      "count": 1,
+      "percentage": 16.67,
+      "method": "iqr"
+    }
+  ],
+  "rows_processed": 10,
+  "rows_cleaned": 6
+}
