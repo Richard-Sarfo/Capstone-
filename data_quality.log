@@ -1,0 +1,38 @@
+2026-01-27 10:55:44 - DataQualityValidator - INFO - ============================================================
+2026-01-27 10:55:44 - DataQualityValidator - INFO - Data Quality Validator Initialized
+2026-01-27 10:55:44 - DataQualityValidator - INFO - Session started at: 2026-01-27T10:55:44.993039
+2026-01-27 10:55:44 - DataQualityValidator - INFO - ============================================================
+2026-01-27 10:55:44 - DataQualityValidator - INFO - Starting validation pipeline on 10 rows
+2026-01-27 10:55:44 - DataQualityValidator - INFO - DataFrame shape: (10, 4)
+2026-01-27 10:55:44 - DataQualityValidator - INFO - Columns: ['user_id', 'age', 'email', 'salary']
+2026-01-27 10:55:44 - DataQualityValidator - INFO - Running duplicate check...
+2026-01-27 10:55:45 - DataQualityValidator - WARNING - Found 1 duplicate rows
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Removed 1 duplicate rows
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Validating required columns...
+2026-01-27 10:55:45 - DataQualityValidator - INFO - All required columns present
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Handling null values...
+2026-01-27 10:55:45 - DataQualityValidator - WARNING - Column 'age': 1 null values (11.11%) - Strategy: fill_median
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Filled nulls in 'age' with median: 31.50
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Validating data types...
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Successfully converted 'user_id' to int
+2026-01-27 10:55:45 - DataQualityValidator - ERROR - Type conversion failed for 'age': cannot safely cast non-equivalent float64 to int64
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Successfully converted 'salary' to float
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Checking value ranges...
+2026-01-27 10:55:45 - DataQualityValidator - WARNING - Column 'age': 1 values below minimum (0)
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Removed 1 rows below minimum
+2026-01-27 10:55:45 - DataQualityValidator - WARNING - Column 'age': 2 values above maximum (120)
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Removed 2 rows above maximum
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Validating patterns...
+2026-01-27 10:55:45 - DataQualityValidator - INFO - All values in 'email' match pattern
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Detecting outliers...
+2026-01-27 10:55:45 - DataQualityValidator - WARNING - Column 'salary': 1 outliers detected (16.67%)
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Flagged 1 outlier rows
+2026-01-27 10:55:45 - DataQualityValidator - INFO - ============================================================
+2026-01-27 10:55:45 - DataQualityValidator - INFO - VALIDATION PIPELINE COMPLETE
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Rows processed: 10
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Rows in cleaned dataset: 6
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Rows removed: 4
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Data quality issues found: 6
+2026-01-27 10:55:45 - DataQualityValidator - INFO - ============================================================
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Exporting quality report to: quality_report.json
+2026-01-27 10:55:45 - DataQualityValidator - INFO - Quality report exported successfully
