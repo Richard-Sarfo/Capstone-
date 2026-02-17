@@ -38,6 +38,7 @@ A comprehensive, configurable data quality validation framework that:
 - Consider impact, frequency, and complexity
 
 **Prompt Used:**
+**Tool Used:** Claude (Chat UX)
 ```
 State some common problem in data engineering field
 ```
@@ -48,6 +49,7 @@ State some common problem in data engineering field
 - Select "data quality issues" as the primary focus
 
 **Prompt Used:**
+**Tool Used:** Claude (Chat UX)
 ```
 Pick one and write solution code for it
 ```
@@ -72,6 +74,7 @@ Pick one and write solution code for it
 - Support multiple action types: remove, flag, fix
 
 **Step 4: Implement Core Validation Logic**
+**Tool Used:** VS Code (IDE UX)
 ```python
 class DataQualityValidator:
     - __init__(): Initialize validator
@@ -92,6 +95,7 @@ class DataQualityValidator:
 - Highlight inputs, outputs, and error paths
 
 **Prompt Used:**
+**Tool Used:** Claude (Chat UX)
 ```
 A simple visual (e.g., flowchart) showing the steps 
 and the flow of data between your chosen tools.
@@ -112,6 +116,7 @@ and the flow of data between your chosen tools.
 - Include timestamps and context for audit trails
 
 **Prompt Used:**
+**Tool Used:** VS Code (IDE UX)
 ```
 Can logs be add to data Quality validation framework.py
 ```
@@ -127,6 +132,7 @@ Can logs be add to data Quality validation framework.py
 **Step 7: Create Comprehensive Documentation**
 
 **Prompt Used:**
+**Tool Used:** Claude (Chat UX)
 ```
 A brief document (1-2 pages) that includes:
 * The problem statement (what you are solving).
