@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-02-17T15:57:25.857320",
+  "checks_performed": [
+    "duplicate_check",
+    "null_handling",
+    "range_validation",
+    "pattern_validation",
+    "outlier_detection"
+  ],
+  "issues_found": [
+    {
+      "type": "duplicates",
+      "count": 1,
+      "columns_checked": [
+        "user_id",
+        "name"
+      ]
+    },
+    {
+      "type": "null_values",
+      "column": "name",
+      "count": 1,
+      "percentage": 25.0,
+      "strategy": "drop_rows"
+    },
+    {
+      "type": "null_values",
+      "column": "age",
+      "count": 1,
+      "percentage": 33.33,
+      "strategy": "fill_median"
+    },
+    {
+      "type": "pattern_violation",
+      "column": "email",
+      "count": 1,
+      "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+    }
+  ],
+  "rows_processed": 5,
+  "rows_cleaned": 3
+}

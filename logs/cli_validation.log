@@ -1,0 +1,56 @@
+2026-02-17 15:09:39 - DataQualityValidator - INFO - ============================================================
+2026-02-17 15:09:39 - DataQualityValidator - INFO - Data Quality Validator Initialized
+2026-02-17 15:09:39 - DataQualityValidator - INFO - Session started at: 2026-02-17T15:09:39.505451
+2026-02-17 15:09:39 - DataQualityValidator - INFO - ============================================================
+2026-02-17 15:09:39 - DataQualityValidator - INFO - Starting validation pipeline on 5 rows
+2026-02-17 15:09:39 - DataQualityValidator - INFO - DataFrame shape: (5, 5)
+2026-02-17 15:09:39 - DataQualityValidator - INFO - Columns: ['user_id', 'name', 'age', 'email', 'salary']
+2026-02-17 15:09:39 - DataQualityValidator - INFO - Running duplicate check...
+2026-02-17 15:09:39 - DataQualityValidator - WARNING - Found 1 duplicate rows
+2026-02-17 15:09:39 - DataQualityValidator - INFO - Removed 1 duplicate rows
+2026-02-17 15:09:39 - DataQualityValidator - INFO - Handling null values...
+2026-02-17 15:09:39 - DataQualityValidator - WARNING - Column 'name': 1 null values (25.00%) - Strategy: drop_rows
+2026-02-17 15:09:39 - DataQualityValidator - INFO - Dropped 1 rows with null values in 'name'
+2026-02-17 15:09:39 - DataQualityValidator - WARNING - Column 'age': 1 null values (33.33%) - Strategy: fill_median
+2026-02-17 15:09:39 - DataQualityValidator - INFO - Filled nulls in 'age' with median: 30.00
+2026-02-17 15:09:39 - DataQualityValidator - INFO - Checking value ranges...
+2026-02-17 15:09:39 - DataQualityValidator - INFO - Validating patterns...
+2026-02-17 15:09:39 - DataQualityValidator - WARNING - Column 'email': 1 values don't match pattern
+2026-02-17 15:09:39 - DataQualityValidator - INFO - Flagged 1 rows with invalid format
+2026-02-17 15:09:39 - DataQualityValidator - INFO - Detecting outliers...
+2026-02-17 15:09:39 - DataQualityValidator - INFO - No outliers detected in 'salary'
+2026-02-17 15:09:39 - DataQualityValidator - INFO - ============================================================
+2026-02-17 15:09:39 - DataQualityValidator - INFO - VALIDATION PIPELINE COMPLETE
+2026-02-17 15:09:39 - DataQualityValidator - INFO - Rows processed: 5
+2026-02-17 15:09:39 - DataQualityValidator - INFO - Rows in cleaned dataset: 3
+2026-02-17 15:09:39 - DataQualityValidator - INFO - Rows removed: 2
+2026-02-17 15:09:39 - DataQualityValidator - INFO - Data quality issues found: 4
+2026-02-17 15:09:39 - DataQualityValidator - INFO - ============================================================
+2026-02-17 15:57:25 - DataQualityValidator - INFO - ============================================================
+2026-02-17 15:57:25 - DataQualityValidator - INFO - Data Quality Validator Initialized
+2026-02-17 15:57:25 - DataQualityValidator - INFO - Session started at: 2026-02-17T15:57:25.857320
+2026-02-17 15:57:25 - DataQualityValidator - INFO - ============================================================
+2026-02-17 15:57:25 - DataQualityValidator - INFO - Starting validation pipeline on 5 rows
+2026-02-17 15:57:25 - DataQualityValidator - INFO - DataFrame shape: (5, 5)
+2026-02-17 15:57:25 - DataQualityValidator - INFO - Columns: ['user_id', 'name', 'age', 'email', 'salary']
+2026-02-17 15:57:25 - DataQualityValidator - INFO - Running duplicate check...
+2026-02-17 15:57:25 - DataQualityValidator - WARNING - Found 1 duplicate rows
+2026-02-17 15:57:25 - DataQualityValidator - INFO - Removed 1 duplicate rows
+2026-02-17 15:57:25 - DataQualityValidator - INFO - Handling null values...
+2026-02-17 15:57:25 - DataQualityValidator - WARNING - Column 'name': 1 null values (25.00%) - Strategy: drop_rows
+2026-02-17 15:57:25 - DataQualityValidator - INFO - Dropped 1 rows with null values in 'name'
+2026-02-17 15:57:25 - DataQualityValidator - WARNING - Column 'age': 1 null values (33.33%) - Strategy: fill_median
+2026-02-17 15:57:25 - DataQualityValidator - INFO - Filled nulls in 'age' with median: 30.00
+2026-02-17 15:57:25 - DataQualityValidator - INFO - Checking value ranges...
+2026-02-17 15:57:25 - DataQualityValidator - INFO - Validating patterns...
+2026-02-17 15:57:25 - DataQualityValidator - WARNING - Column 'email': 1 values don't match pattern
+2026-02-17 15:57:25 - DataQualityValidator - INFO - Flagged 1 rows with invalid format
+2026-02-17 15:57:25 - DataQualityValidator - INFO - Detecting outliers...
+2026-02-17 15:57:25 - DataQualityValidator - INFO - No outliers detected in 'salary'
+2026-02-17 15:57:25 - DataQualityValidator - INFO - ============================================================
+2026-02-17 15:57:25 - DataQualityValidator - INFO - VALIDATION PIPELINE COMPLETE
+2026-02-17 15:57:25 - DataQualityValidator - INFO - Rows processed: 5
+2026-02-17 15:57:25 - DataQualityValidator - INFO - Rows in cleaned dataset: 3
+2026-02-17 15:57:25 - DataQualityValidator - INFO - Rows removed: 2
+2026-02-17 15:57:25 - DataQualityValidator - INFO - Data quality issues found: 4
+2026-02-17 15:57:25 - DataQualityValidator - INFO - ============================================================
